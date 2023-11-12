@@ -1,0 +1,71 @@
+/*Para romper el estilo por default del navegador al poner los bordes en los elementos hago un reseteo de css*/
+*{
+    margin:0; /*reseteo de css*/
+    padding:0;
+}
+
+div{
+    border:solid 1px black;
+    /*float:right* se utilizaba antiguamente xq no teniamos la herramientas de ahora*/
+    width: 350px; /*a cada elemento le pone 350 px,depende del tamaño de esto me pondra el flex-wrap mas o menos elementos en la fila */
+    padding:35PX; /*Hace q el padding sea mas grande(por lo cual la distancia del borde a los elementos sera mas grande)*/
+    margin:40; /* EL MARGIN ES LA SEPARACION ENTRE CADA ELEMENTO EN ESTE CASO ENTRE CADA div*/
+    text-align: center;/*pra centrar div*/
+}
+.padre{
+    display: flex; /* me acomoda los elementos del tipo flexbox como en una fila*/
+    /*flex-direction: column; me muestra los objetos en columnas pero esto enrealidad no hace falta xq viene predeterminada esta oopcion*/
+    /*flex-direction: column-reverse; */
+    /*flex-direction: column-reverse; */
+    /*flex-direction: row;  es lo mismo que column*/
+    /*flex-direction: row-reverse; */
+    flex-wrap:wrap ;/*introduce en la primer row en  la 1er fila 4 elementos y cuando el navegador le dice que ya no entra un 5to elemento flex wrap corre ese 5to elemento a una 2da fila*/
+    justify-content: center;/*me justifica los contenidos en el centro al igual que el tex-align.Si quiero a la derecha pongo right*/
+}
+
+ul{
+    display: flex; /* pone los elementos en fila*/
+   justify-content:space-between; /*les da un margen de separacion entre los elementos*/
+   justify-content:space-around; /*les da un margen de separacion entre los elementos pero queda mejor a la vista*/
+   justify-content:center; /*me centra los elementos y quedan pegados*/ 
+}
+
+li{
+    list-style: none;/*estilos de la lista*/
+    border:solid 1px black;
+    padding: :10px;
+    margin-top:10px;
+    margin-bottom:20px;/*le añade formato de nboton*/
+    margin-right:25px; /*me separa los elementos centrados*/
+}
+
+.sinDecora{      /*es mas conveniente hacer una clase sindecoracion y luego a todas las anclas "a" le añado esta clase ,u a otra etiqueta(puedo ahorrar codigo)*/
+    text-decoration: none;
+}
+
+/*a{
+    text-decoration: none;
+} es mas recomendable hacer una clase que sea sinDecora*/
+
+button{
+    padding: 15px; /*le damos relleno interno al button para ver producto asi como hicimos con el div*/
+    margin-top: 10px;
+}
+
+button a{
+        text-decoration: none;  /* como repito un dato es es mas recomendable hacer una clase que sea sinDecora*/
+        color:black;
+}
+
+button:hover{         /*hover: permite q cuando nos paremos sobre el boton este cambie su color*/
+    background: green;
+    color:white;
+}
+
+button a:hover{ /*hover: este hace q el color de texto cambie a blanco definitivamente*/
+    color:white;
+}
+
+h3,h4{
+    margin:15px;
+}

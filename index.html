@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8"> <!-- {utf-8 tipografia en español}  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- "trata de adaptar la vista del navegador al dispositivo q utilice el usuario/cliente" -->
+        <!--CSS: Hoja de estilo¿Como darle estilo a la pag web-->
+    <!--Forma 1.llinkeamos el archivo css a la pagina web aqui-->
+    <link rel="stylesheet" href="../css/productos.css">
+    
     <title>Pagina Web</title>
+ 
+   <!--Forma 2.Agregamos etiqueta style:permite escribir en html ,reglas de css--> 
+   <!--en body el color de fondo sera rojo-->  <!-- en todas las etiquetas h1 tendran color de azul--> 
+    <style>
+     body{
+          background: red;  
+          }
+          h1{color:blue;} 
+     </style> 
 </head>
 <body> <!-- body es la etiqueta padre de todos esdecir es el contenedor padre de todas las etiquetas -->
    
- 
+ <!--    -->
  <!-- comentar ctrl + shift + A -->
 <h1>Bienvenidos a mi aplicacion </h1>
 
@@ -24,6 +37,9 @@
     </li>
     <li>
       <a href="./pages/sucursales.html">Sucursales</a>
+    </li>
+    <li>
+      <a href="./pages/formulario.html">Sucursales</a>
     </li>
   </ul>
 </nav> 
@@ -60,16 +76,16 @@
          <section>
             <h1>Automotores</h1>
             <article>
-                <h2>Fiat</h2>
+                <h2 class="TituloMarron TipografiaNueva"> Fiat </h2>
     
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit molestias nostrum facilis sit cum laudantium, harum ex officiis error, ipsum omnis dignissimos nisi ab eius a consequatur et aperiam provident.</p>
+                <p id="parrafoAzul">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit molestias nostrum facilis sit cum laudantium, harum ex officiis error, ipsum omnis dignissimos nisi ab eius a consequatur et aperiam provident.</p>
     <!-- el lorem me sirve para dejar ese parragfo segun lo q quiera el cliente -->
                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quia odit amet vel, sapiente deleniti adipisci facilis, facere qui explicabo labore dolores rerum natus? Voluptas praesentium nemo unde blanditiis nulla!</p>
     
              </article>
              <article>
                 <h3>Ford</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit molestias nostrum facilis sit cum laudantium, harum ex officiis error, ipsum omnis dignissimos nisi ab eius a consequatur et aperiam provident.</p>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit molestias nostrum facilis sit cum laudantium, harum ex officiis error, ipsum omnis dignissimos nisi ab eius a consequatur et aperiam provident.</p>
                 <!-- p*3 me automatiza 3 parrafos  -->
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit molestias nostrum facilis sit cum laudantium, harum ex officiis error, ipsum omnis dignissimos nisi ab eius a consequatur et aperiam provident.</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit molestias nostrum facilis sit cum laudantium, harum ex officiis error, ipsum omnis dignissimos nisi ab eius a consequatur et aperiam provident.</p>

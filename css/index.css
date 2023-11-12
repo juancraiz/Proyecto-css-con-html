@@ -1,0 +1,28 @@
+/*Acontinuacion estructuraremos las reglas de css
+1.Seleccionamos el selector: el selector es adonde apunto de las etiquetas de la pagina web para darle la regla de estilos*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*font-family es la flia de tipografias q le voy a poner a nuestra pagina index,cuya tipografia es la q tengo guardada en el paquete de mi compu(sans.serif es tipografia sin adornos)*/
+main{
+    background-color: aliceblue;
+}
+
+h2{                      /* ES UN SELECTOR GLOBAL DE TODOS LOS H2*/
+    color:rgb(20, 150, 48);
+}
+
+
+/*2.Seleccion por clases*/   /* si queremos repetir la regla muchas veces usamos class */
+.TituloMarron{              /* si h2 tiene esta clase va a tener mayor prioridad el selector por clases que la regla global de h2*/
+    color:brown;
+}
+.TipografiaNueva{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+    
+/*3.Selecciono por id*/  /* si queremos utilizar/tocar el elemento por unica vez utilizo id(no se puede repetir el id xq es un id unico)*/
+#parrafoAzul{
+    color: blue;
+} /* lo utilizaremos en javascript para q cuando interactuemos con la pagina al seleccionar algo del menu ese texto con id desaparezca*/
